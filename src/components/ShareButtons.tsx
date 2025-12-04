@@ -6,7 +6,7 @@ interface ShareButtonsProps {
 }
 
 export default function ShareButtons({
-    url = 'https://your-netlify-url.netlify.app/',
+    url = 'https://illusion-of-reasoning.netlify.app/',
     title = 'How LLM Systems Create the Illusion of Reasoning'
 }: ShareButtonsProps) {
     const shareLinks = {

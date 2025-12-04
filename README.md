@@ -13,6 +13,8 @@ This project breaks down the "black box" of Large Language Models into 10 unders
 
 It was built to accompany the article **"The Illusion of Reasoning"**.
 
+> **Note:** This repository is an **illustrative demonstration for divulgation purposes**. The code and data shown are simulated to explain concepts and are not a production-grade LLM inference engine.
+
 ## ✨ Features
 
 *   **Interactive Layer Exploration:** Toggle layers on/off to see their specific contribution.
