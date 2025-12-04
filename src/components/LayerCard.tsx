@@ -48,17 +48,7 @@ export default function LayerCard({
         >
             {/* Header */}
             <div className="p-4 flex items-center justify-between gap-4">
-                <div
-                    className="flex-1 flex items-center gap-4 cursor-pointer"
-                    onClick={() => setIsExpanded(!isExpanded)}
-                >
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center text-[#1e1e1e] font-bold text-sm ${isDisabled ? 'bg-[#858585]' : 'bg-[#4ec9b0]'
-                        }`}>
-                        {layerNumber}
-                    </div>
-                    <h3 className="text-lg font-semibold text-[#d4d4d4]">{title}</h3>
-                </div>
-
+                {/* Action buttons on the LEFT */}
                 <div className="flex items-center gap-3">
                     <button
                         onClick={(e) => {
@@ -79,6 +69,18 @@ export default function LayerCard({
                     >
                         {isExpanded ? <ChevronUp className="w-5 h-5 text-[#858585]" /> : <ChevronDown className="w-5 h-5 text-[#858585]" />}
                     </button>
+                </div>
+
+                {/* Layer title in the middle */}
+                <div
+                    className="flex-1 flex items-center gap-4 cursor-pointer"
+                    onClick={() => setIsExpanded(!isExpanded)}
+                >
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center text-[#1e1e1e] font-bold text-sm ${isDisabled ? 'bg-[#858585]' : 'bg-[#4ec9b0]'
+                        }`}>
+                        {layerNumber}
+                    </div>
+                    <h3 className="text-lg font-semibold text-[#d4d4d4]">{title}</h3>
                 </div>
             </div>
 
