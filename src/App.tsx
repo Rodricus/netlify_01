@@ -106,13 +106,23 @@ function App() {
                   </div>
 
                   {/* Intro Text */}
-                  <div className="text-center mb-12">
-                    <p className="text-[#858585]">
-                      The "intelligent" response was built from <strong className="text-[#d4d4d4]">10 architectural layers</strong>
+                  <div className="text-center mb-12 space-y-4">
+                    <p className="text-[#d4d4d4] text-lg">
+                      The "intelligent" response was built from <strong className="text-[#4ec9b0]">10 architectural layers</strong>
                     </p>
-                    <p className="text-sm text-[#858585] mt-1">
+                    <p className="text-sm text-[#858585]">
                       5 system layers + 5 LLM internal layers
                     </p>
+                    <div className="mt-6 p-4 bg-[#252526] border border-[#3e3e42] rounded-lg max-w-2xl mx-auto">
+                      <p className="text-[#d4d4d4] text-sm leading-relaxed">
+                        <strong className="text-[#4ec9b0]">Click any layer to expand it.</strong> Toggle the eye icon to disable a layer and watch how the pipeline adapts.
+                        This is not a simulation—this is how production LLM systems are actually built.
+                        No reasoning. No memory. Just orchestrated pattern matching across 10 discrete operations.
+                      </p>
+                      <p className="text-[#858585] text-xs mt-3">
+                        Take your time. The illusion won't bite. But it will become visible.
+                      </p>
+                    </div>
                   </div>
 
                   {/* LAYERS */}

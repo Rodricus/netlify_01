@@ -31,7 +31,7 @@ export default function LayerCard({
 }: LayerCardProps) {
     const [showCode, setShowCode] = useState(false)
     const [showData, setShowData] = useState(true)
-    const [isExpanded, setIsExpanded] = useState(true)
+    const [isExpanded, setIsExpanded] = useState(false)
     const { toggleLayer, enabledLayers } = useAppStore()
 
     // Determine the layer key based on number
